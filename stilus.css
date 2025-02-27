@@ -1,55 +1,82 @@
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
 body {
-   
+    background-color: greenyellow;
+    font-family: Arial, sans-serif;
+}
+ 
 header {
     background-color: green;
-    text-transform: uppercase;
-   
+    border: 5px solid black;
+    padding: 10px;
+    text-align: center;
     border-radius: 10px;
-   
+    margin-bottom: 10px;
 }
-a {
-    color:black;
-  
+ 
+nav a {
+    color: black;
     border: 4px solid black;
     border-radius: 8px;
     margin: 5px;
-    white-space: nowrap; /* chatgpt kód */
-    display: inline-block; /*chatgpt kód */
-      
+    padding: 5px;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
 }
-
-nav {
-    margin-bottom: 10px;
-
-}
-* {
-    box-sizing: border-box;
-}
-img {
  
+nav a:hover {
+    background-color: greenyellow;
+}
+ 
+img {
+    width: 100%;
     border: 5px solid black;
     border-radius: 10px;
 }
+ 
 section {
     margin-top: 10px;
-    padding: 5px;
+    padding: 10px;
     border: 5px solid black;
     border-radius: 15px;
     background-color: green;
 }
+ 
 p {
     border: 5px solid black;
     border-radius: 10px;
+    padding: 5px;
     background-color: greenyellow;
 }
+ 
 article {
-    
+    display: grid;
     gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
 }
+ 
+@media (max-width: 800px) {
+    article {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+ 
+@media (max-width: 500px) {
+    article {
+        grid-template-columns: 1fr;
+    }
+}
+ 
 #bekezdes_footer {
     background-color: green;
     border: 5px solid black;
     font-size: large;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
-
-
